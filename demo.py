@@ -1,6 +1,6 @@
 import hashlib
 import random
-
+#here random is just used to increase difficulty level to solve the puzzle.
 #prover
 secret = 'Path is ABC'
 #verifier
@@ -26,7 +26,7 @@ def verifierKnowledge(hashedSecret, ExpectedSecret):
             return True
     return False
 
-
+#this is how instead of revealing the message just confirm whether either condition meets the requirement or not
 if(verifierKnowledge(hashedSecret, ExpectedSecret)):
   print("Same Path")
 else:
